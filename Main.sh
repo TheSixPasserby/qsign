@@ -95,31 +95,37 @@ msgbox "账号 $GCQDir 写入版本 $QQVersion 成功";}
 
 qss_version(){ [ -n "$QQVersion" ]&&[ -d "txlib/$QQVersion" ]||{
 Choose="$(menubox "- 请选择 QQ 版本"\
-  1 "QQ 8.9.88"\
-  2 "QQ 8.9.85"\
-  3 "QQ 8.9.83"\
-  4 "QQ 8.9.80"\
-  5 "QQ 8.9.78"\
-  6 "QQ 8.9.76"\
-  7 "QQ 8.9.73"\
-  8 "QQ 8.9.71"\
-  9 "QQ 8.9.68"\
-  10 "QQ 8.9.63"\
-  11 "TIM 3.5.2"\
-  12 "TIM 3.5.1")"||return
+  1 "QQ 8.9.96"\
+  2 "QQ 8.9.93"\
+  3 "QQ 8.9.90"\
+  4 "QQ 8.9.88"\
+  5 "QQ 8.9.85"\
+  6 "QQ 8.9.83"\
+  7 "QQ 8.9.80"\
+  8 "QQ 8.9.78"\
+  9 "QQ 8.9.76"\
+  10 "QQ 8.9.73"\
+  11 "QQ 8.9.71"\
+  12 "QQ 8.9.68"\
+  13 "QQ 8.9.63"\
+  14 "TIM 3.5.2"\
+  15 "TIM 3.5.1")"||return
 case "$Choose" in
-  1)QQVersion=8.9.88;;
-  2)QQVersion=8.9.85;;
-  3)QQVersion=8.9.83;;
-  4)QQVersion=8.9.80;;
-  5)QQVersion=8.9.78;;
-  6)QQVersion=8.9.76;;
-  7)QQVersion=8.9.73;;
-  8)QQVersion=8.9.71;;
-  9)QQVersion=8.9.68;;
-  10)QQVersion=8.9.63;;
-  11)QQVersion=3.5.2;;
-  12)QQVersion=3.5.1
+  1)QQVersion=8.9.96;;
+  2)QQVersion=8.9.93;;
+  3)QQVersion=8.9.90;;
+  4)QQVersion=8.9.88;;
+  5)QQVersion=8.9.85;;
+  6)QQVersion=8.9.83;;
+  7)QQVersion=8.9.80;;
+  8)QQVersion=8.9.78;;
+  9)QQVersion=8.9.76;;
+  10)QQVersion=8.9.73;;
+  11)QQVersion=8.9.71;;
+  12)QQVersion=8.9.68;;
+  13)QQVersion=8.9.63;;
+  14)QQVersion=3.5.2;;
+  15)QQVersion=3.5.1
 esac
 echo -n "$QQVersion">QQVersion
 yesnobox "是否写入 go-cqhttp"&&qss_gcqver
