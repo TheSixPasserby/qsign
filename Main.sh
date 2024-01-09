@@ -19,6 +19,24 @@ qss_setgcqver(){ echo -n '{
 }">"$1.json";}
 
 qss_gcqver(){ case "$QQVersion" in
+"8.9.96")sort_version_name="8.9.96.13530"
+  app_id:"537189851"
+  pad_app_id:"537189752"
+  build_time="1701164403"
+  sdk_version="6.0.0.2557"
+  qua="V1_AND_SQ_8.9.96_5050_HDBM_T"
+"8.9.93")sort_version_name="8.9.93.13475"
+  app_id:"537187398"
+  pad_app_id:"537184248"
+  build_time="1697015435"
+  sdk_version="6.0.0.2556"
+  qua="V1_AND_SQ_8.9.93_5028_YYB_D"
+"8.9.90")sort_version_name="8.9.90.13250"
+  app_id:"537185007"
+  pad_app_id:"537185046"
+  build_time="1697015435"
+  sdk_version="6.0.0.2556"
+  qua="V1_AND_SQ_8.9.90_4938_YYB_D"
 "8.9.88")sort_version_name="8.9.88.13035"
   app_id="537182769"
   pad_app_id="537182808"
@@ -107,9 +125,7 @@ Choose="$(menubox "- 请选择 QQ 版本"\
   10 "QQ 8.9.73"\
   11 "QQ 8.9.71"\
   12 "QQ 8.9.68"\
-  13 "QQ 8.9.63"\
-  14 "TIM 3.5.2"\
-  15 "TIM 3.5.1")"||return
+  13 "QQ 8.9.63"||return
 case "$Choose" in
   1)QQVersion=8.9.96;;
   2)QQVersion=8.9.93;;
@@ -123,9 +139,7 @@ case "$Choose" in
   10)QQVersion=8.9.73;;
   11)QQVersion=8.9.71;;
   12)QQVersion=8.9.68;;
-  13)QQVersion=8.9.63;;
-  14)QQVersion=3.5.2;;
-  15)QQVersion=3.5.1
+  13)QQVersion=8.9.63
 esac
 echo -n "$QQVersion">QQVersion
 yesnobox "是否写入 go-cqhttp"&&qss_gcqver
