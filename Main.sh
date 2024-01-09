@@ -122,10 +122,10 @@ Choose="$(menubox "- 请选择 QQ 版本"\
   7 "QQ 8.9.80"\
   8 "QQ 8.9.78"\
   9 "QQ 8.9.76"\
-  10 "QQ 8.9.73"\
+  10 "QQ 8.9.73"\ 
   11 "QQ 8.9.71"\
   12 "QQ 8.9.68"\
-  13 "QQ 8.9.63"||return
+  13 "QQ 8.9.63")"||return
 case "$Choose" in
   1)QQVersion=8.9.96;;
   2)QQVersion=8.9.93;;
