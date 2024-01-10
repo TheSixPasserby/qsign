@@ -1,12 +1,14 @@
 # 如何更换仓库？
+进入TRSS-AllBot根目录，然后
 ``` bash
-    cd ./.git
-    vim config
-    url = https://github.com/TheSixPasserby/qsign.git
+cd ./home/QSignServer/.git
+vim config
+url = https://github.com/TheSixPasserby/qsign.git
 ```
 或
 ```bash
-    git remote set-url origin https://github.com/TheSixPasserby/qsign.git
+cd ./home/QSignServer
+git remote set-url origin https://github.com/TheSixPasserby/qsign.git
 ```
 然后进入脚本更新即可
 # 感谢
